@@ -13,7 +13,7 @@ st.markdown("点击下方按钮并说话，AI 将自动为你整理账单。")
 
 # --- 初始化阿里云客户端 ---
 client = OpenAI(
-    api_key="sk-8272ab26559b4862ba5caa392cc65a5e", 
+    api_key=st.secrets["ALIYUN_API_KEY"], 
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
